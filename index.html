@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car Rental Website - Rent your dream car today!">
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="arman">
+        <a href="#" class="logo"><img src="img/jeep.png" alt="Logo"></a>
+        <div class="bx bx-menu" id="menu-icon" aria-label="Menu"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#history" id="history-link" style="display: none;">Booking History</a></li>
+        </ul>
+        <div class="header-btn">
+            <button class="button-dark-light">Night Mode</button>
+            <a href="signup.html" class="sign-in" id="sign-in-btn">Sign In</a>
+            <button class="sign-out" id="sign-out-btn" style="display: none;">Sign Out</button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>Looking</span> to<br>rent a car</h1>
+            <p>Explore our wide range of vehicles for your next journey.</p>
+            <div class="app-stores">
+                <img src="img/ios.png" alt="App Store">
+                <img src="img/play.png" alt="Google Play">
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="rentalForm">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" id="location" placeholder="Search places" required>
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" id="pickupDate" required>
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" id="returnDate" required>
+                </div>
+                <input type="submit" value="Search Cars" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Ride Section -->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How It Works</span>
+            <h1>Rent in 3 Simple Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bx-map'></i>
+                <h2>Choose Location</h2>
+                <p>Select your pickup and drop-off points.</p>
+            </div>
+            <div class="box">
+                <i class='bx bx-calendar'></i>
+                <h2>Pick Dates</h2>
+                <p>Set your rental period easily.</p>
+            </div>
+            <div class="box">
+                <i class='bx bx-car'></i>
+                <h2>Book Car</h2>
+                <p>Reserve your vehicle and drive away!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Our Services</span>
+            <h1>Explore Our Fleet</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img"><img src="img/car1.jpg" alt="Sports Mini"></div>
+                <p>Sports Mini</p>
+                <h3>₹2000/day</h3>
+                <a href="car-details.html" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img"><img src="img/car2.jpg" alt="Mini Car"></div>
+                <p>Mini Car</p>
+                <h3>₹3500/day</h3>
+                <a href="car-details.html" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img"><img src="img/car3.jpg" alt="Luxury Car"></div>
+                <p>Luxury Car</p>
+                <h3>₹5000/day</h3>
+                <a href="car-details.html" class="btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About Us</span>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img"><img src="img/about.png" alt="About Us"></div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>We provide reliable and affordable car rental services with a focus on customer satisfaction.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>What Our Customers Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img"><img src="img/user1.jpg" alt="User 1"></div>
+                <h2>John Doe</h2>
+                <p>"Great service and affordable prices!"</p>
+                <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></div>
+            </div>
+            <div class="box">
+                <div class="rev-img"><img src="img/user2.jpg" alt="User 2"></div>
+                <h2>Jane Smith</h2>
+                <p>"Loved the luxury car options."</p>
+                <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <div class="box">
+            <input type="email" placeholder="Enter your email" required>
+            <button class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Booking History Section -->
+    <section class="history" id="history" style="display: none;">
+        <div class="heading">
+            <span>Your Bookings</span>
+            <h1>Booking History</h1>
+        </div>
+        <div id="history-container"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide top-notch car rental services for all your travel needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#ride">Ride</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +123-456-7890</li>
+                    <li><i class='bx bx-envelope'></i> support@carrental.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Car Rental. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

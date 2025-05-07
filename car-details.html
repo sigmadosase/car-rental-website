@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header class="arman">
+        <a href="#" class="logo"><img src="img/jeep.png" alt="Logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Reservation</a></li>
+            <li><a href="#ride">Offers</a></li>
+            <li><a href="#services">Support</a></li>
+            <li>
+                <select class="rupees">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NBP">NBP</option>
+                    <option value="EVR">EVR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="NZD">NZD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="MXN">MXN</option>
+                </select>
+            </li>
+        </ul>
+        <div class="header-btn">
+            <button class="button-dark-light">Night Mode</button>
+            <a href="signup.html" class="sign-in" id="sign-in-btn">Sign In</a>
+            <button class="sign-out" id="sign-out-btn" style="display: none;">Sign Out</button>
+        </div>
+    </header>
+
+    <!-- Car Filters -->
+    <div class="car-type">
+        <div class="car">
+            <select id="carType">
+                <option value="All">All Cars</option>
+                <option value="SPORTS MINI">SPORTS MINI</option>
+                <option value="MINI CAR">MINI CAR</option>
+                <option value="Luxury CAR">Luxury CAR</option>
+                <option value="CAR.">CAR.</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="LUXURY SPORT CAR">LUXURY SPORT CAR</option>
+                <option value="LUXURY JEEP">LUXURY JEEP</option>
+            </select>
+        </div>
+        <div class="car">
+            <select id="fuelType">
+                <option value="All">All Fuels</option>
+                <option value="DIESEL">DIESEL</option>
+                <option value="PETROL">PETROL</option>
+                <option value="CNG">CNG</option>
+                <option value="EV">EV</option>
+            </select>
+        </div>
+        <div class="car">
+            <select id="paymentType">
+                <option value="All">All Payments</option>
+                <option value="UPI">UPI</option>
+                <option value="CASH">CASH</option>
+                <option value="NET BANKING">NET BANKING</option>
+                <option value="DEBIT CARD">DEBIT CARD</option>
+            </select>
+        </div>
+        <div class="car">
+            <select id="seatType">
+                <option value="All">All Seats</option>
+                <option value="4">4</option>
+                <option value="4+space">4+space</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Cars Container -->
+    <div id="cars-container"></div>
+
+    <!-- Car Comparison Modal -->
+    <div id="compare-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Compare Cars</h2>
+            <div id="compare-container"></div>
+            <button id="close-compare" class="btn">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide the best car rental services for your travel needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +123-456-7890</li>
+                    <li><i class='bx bx-envelope'></i> support@carrental.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Car Rental. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="car.js"></script>
+</body>
+</html>

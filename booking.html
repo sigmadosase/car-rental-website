@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalize Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header class="arman">
+        <a href="#" class="logo"><img src="img/jeep.png" alt="Logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#ride">Offers</a></li>
+            <li><a href="#services">Support</a></li>
+            <li>
+                <select class="rupees">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NBP">NBP</option>
+                    <option value="EVR">EVR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="NZD">NZD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="MXN">MXN</option>
+                </select>
+            </li>
+        </ul>
+        <div class="header-btn">
+            <button class="button-dark-light">Night Mode</button>
+            <a href="signup.html" class="sign-in" id="sign-in-btn">Sign In</a>
+            <button class="sign-out" id="sign-out-btn" style="display: none;">Sign Out</button>
+        </div>
+    </header>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-details" id="bookingDetails">
+                <h2>Finalize Your Booking</h2>
+                <div class="selected-car" id="selectedCarDetails"></div>
+                <div class="reservation-details" id="reservationDetails"></div>
+                <div id="map-placeholder" style="height: 200px; background: #ddd; margin: 20px 0;">Map Placeholder (Google Maps API can be integrated here)</div>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="UPI">UPI</option>
+                            <option value="CASH">Cash</option>
+                            <option value="NET BANKING">Net Banking</option>
+                            <option value="DEBIT CARD">Debit Card</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="paymentDetails" style="display: none;">
+                        <label for="paymentInfo">Payment Details</label>
+                        <input type="text" id="paymentInfo" placeholder="e.g., UPI ID, Card Number" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Complete Booking</button>
+                </form>
+            </div>
+            <div class="booking-confirmation" id="bookingConfirmation" style="display: none;">
+                <h2>Booking Confirmed!</h2>
+                <p>Your car is booked. Details below:</p>
+                <div id="confirmationDetails"></div>
+                <button class="submit-btn" id="backToHome">Back to Home</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide the best car rental services for your travel needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +123-456-7890</li>
+                    <li><i class='bx bx-envelope'></i> support@carrental.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Car Rental. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
